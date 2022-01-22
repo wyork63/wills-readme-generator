@@ -7,7 +7,7 @@ To operate this app you need to copy the code to your local machine and install 
 
 # Click the image below to watch a tutorial of the app in action 
 
-[![Will's ReadMe Generator Video](insert image link here)](https://www.youtube.com/)
+[![Will's ReadMe Generator Video](./assets/readme-video.png)](https://www.youtube.com/watch?v=vACR7cfRxxc/)
 
 # Head to the Develop folder to see what the generated README looks like
 
