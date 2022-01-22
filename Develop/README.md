@@ -1,11 +1,11 @@
 
-  # ReadMe Generator
+  # readme generator
 
-  # ![license]https://img.shields.io/github/license/wyork63/wills-readme-generator
+  # !<img src="https://img.shields.io/github/license/wyork63/wills-readme-generator">
 
   ## Description
 
-  An app run on the local machine that generates a readme file using node.js
+  an app run on the local machine that generates a readme file using node.js
 
   ## Table of Contents
 
@@ -24,11 +24,11 @@
 
   ## Installtion
 
-  The following must be installed to run the application properly: Node js and inquirer
+  The following must be installed to run the application properly: node js and inquirer
 
   ## Usage
 
-  to generate a readme file
+  to generate a custome readme file
 
   ## License
 
