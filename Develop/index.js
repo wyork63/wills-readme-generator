@@ -1,19 +1,35 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown")
 const fs = require("fs"); 
 
-// TODO: Create an array of questions for user input
+// Create an array of questions for user input
 const questions = [
     {
         type: "input",
         message: "What is your GitHub Username?",
         name: "username",
+        validate: usernameInput => {
+            if (usernameInput) {
+              return true;
+            } else {
+              console.log('Please enter a GitHub username!');
+              return false;
+            }
+          }
     },
     {
         type: "input",
         message: "What is your email address?",
         name: "email",
+        validate: emailInput => {
+            if (emailInput) {
+              return true;
+            } else {
+              console.log('Please enter an Email');
+              return false;
+            }
+          }
     },
     {
         type: "input",
@@ -39,7 +55,7 @@ const questions = [
         type: "checkbox",
         message: "What license are you using on this project? (Only choose one option)",
         name: "license", 
-        choices: ['MIT', 'GPLv2', 'Apache', 'Other']
+        choices: ['MIT', 'GPLv2', 'Apache', 'Other'],
     },
     {
         type: "input",
@@ -48,15 +64,9 @@ const questions = [
     },
     {
         type: "input",
-        message: "Once setup, how do you test this app?",
+        message: "Once setup, what command is used to run this app?",
         name: "test",
     },
-    {
-        type: "input",
-        message: "Questions? please email ",
-        name: "questions",
-    }
-
 ];
 
 //Create a function to write README file
