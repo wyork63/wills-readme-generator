@@ -20,6 +20,19 @@ const questions = [
     },
     {
         type: "input",
+        message: "What is the name of your GitHub Repo?",
+        name: "repo",
+        validate: repoInput => {
+            if (repoInput) {
+              return true;
+            } else {
+              console.log('Please enter a repo name!');
+              return false;
+            }
+          }
+    },
+    {
+        type: "input",
         message: "What is your email address?",
         name: "email",
         validate: emailInput => {

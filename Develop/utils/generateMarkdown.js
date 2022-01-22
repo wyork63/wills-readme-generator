@@ -15,6 +15,8 @@ function generateMarkdown(data) {
   return`
   # ${data.title}
 
+  # ![license]https://img.shields.io/github/license/${data.username}/${data.repo}
+
   ## Description
 
   ${data.description}
